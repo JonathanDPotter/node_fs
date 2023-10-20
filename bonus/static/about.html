@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+  </head>
+  <body>
+    <header>
+      <h1>Node FS</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/echo">Echo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>About</h2>
+      <p>This is my version of the TrueCoders Node FS excercise.</p>
+      <p>
+        This exercise is intended to help me learn and remember the uses of the
+        Node file system module.
+      </p>
+      <p>
+        I am using the file system to read .html files and display them to the
+        browser with my Node server. I also made a custom logger for the server
+        that logs all requests to the console in the format: [METHOD]
+        STATUS_CODE path:"PATH" TIME_OF_REQUEST.
+      </p>
+    </main>
+
+    <footer>
+      2023
+      <a href="https://portfolio-next-snowy-omega.vercel.app/"
+        >Jonathan Potter</a
+      >
+    </footer>
+  </body>
+  <style>
+    :root {
+      --dark-moss-green: #606c38ff;
+      --pakistan-green: #283618ff;
+      --cornsilk: #fefae0ff;
+      --earth-yellow: #dda15eff;
+      --tigers-eye: #bc6c25ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      background-color: var(--pakistan-green);
+      color: var(--cornsilk);
+      height: 100vh;
+    }
+
+    header {
+      background-color: var(--tigers-eye);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom-left-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+
+    header ul {
+      display: flex;
+      gap: 1rem;
+    }
+
+    header li {
+      list-style-type: none;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      background-color: var(--earth-yellow);
+      color: var(--pakistan-green);
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  </style>
+</html>
