@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require("fs");
+const path = require("path");
 const { router } = require("./router");
 const { logger } = require("./logger");
 
@@ -23,11 +24,13 @@ http
         res.writeHead(status, { "Content-Type": contentType });
 
         contentType === "text/html"
-          ? fs.readFile(`./static/${content}.html`, (err, data) => {
-              err && console.log(err);
-              res.write(data);
-              res.end();
-            })
+          ? fs.readFile(
+              path.join(__dirname, `./static/${content}.html`),
+              (err, data) => {
+                err && console.log(err);
+                res.end(data);
+              }
+            )
           : res.end(content);
       });
   })
